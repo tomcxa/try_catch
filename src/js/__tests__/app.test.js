@@ -5,7 +5,7 @@ test.each([
     [null, Error('Ввод не верен')],
     ['', Error('Ввод не верен')],
     [' ', Error('Ввод не верен')],
-    ['0XA', 0],
+    ['0XA', Error('Ввод не верен')],
 ])('should num', (input, expected) => {
     const result = checkInput(input);
 

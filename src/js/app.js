@@ -3,7 +3,7 @@
 export function checkInput(input) {
     try {
         const num = parseInt(input, 10);
-        if (Number.isNaN(num)) {
+        if (Number.isNaN(num) || num === 0) {
             throw new Error('Ввод не верен');
         }
         return num;
